@@ -1,0 +1,14 @@
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\bin\Debug\net6.0\EpedimiologicReport.Dal.deps.json
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\bin\Debug\net6.0\EpedimiologicReport.Dal.runtimeconfig.json
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\bin\Debug\net6.0\EpedimiologicReport.Dal.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\bin\Debug\net6.0\EpedimiologicReport.Dal.pdb
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.csproj.AssemblyReference.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.AssemblyInfoInputs.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.AssemblyInfo.cs
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\refint\EpedimiologicReport.Dal.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.pdb
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\EpedimiologicReport.Dal.genruntimeconfig.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Dal\obj\Debug\net6.0\ref\EpedimiologicReport.Dal.dll

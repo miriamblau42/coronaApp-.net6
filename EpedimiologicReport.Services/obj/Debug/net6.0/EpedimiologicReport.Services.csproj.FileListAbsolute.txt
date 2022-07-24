@@ -1,0 +1,17 @@
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\bin\Debug\net6.0\EpedimiologicReport.Services.deps.json
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\bin\Debug\net6.0\EpedimiologicReport.Services.runtimeconfig.json
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\bin\Debug\net6.0\EpedimiologicReport.Services.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\bin\Debug\net6.0\EpedimiologicReport.Services.pdb
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\bin\Debug\net6.0\EpedimiologicReport.Dal.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\bin\Debug\net6.0\EpedimiologicReport.Dal.pdb
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.csproj.AssemblyReference.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.AssemblyInfoInputs.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.AssemblyInfo.cs
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.csproj.CopyComplete
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\refint\EpedimiologicReport.Services.dll
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.pdb
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\EpedimiologicReport.Services.genruntimeconfig.cache
+C:\Users\1\Documents\DB_first_EF\Code_First\EpedimiologicReport\EpedimiologicReport.Services\obj\Debug\net6.0\ref\EpedimiologicReport.Services.dll
