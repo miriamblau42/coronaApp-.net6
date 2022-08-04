@@ -11,5 +11,7 @@ public interface IPatientRepository
 {
     Task<Patient> Get(string id);
 
-    void Save(Patient patient);
+    Task<bool> Save(Patient patient);
+    Task<List<Location>> GetLocationsByPatientId(string id);
+
 }

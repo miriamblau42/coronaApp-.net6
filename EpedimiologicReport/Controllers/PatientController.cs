@@ -15,28 +15,49 @@ namespace EpedimiologicReport.api.Controllers;
 public class PatientController : ControllerBase
 {
 
-    PatientRepository _patientRepository;
-    public PatientController()
+    IPatientRepository _patientRepository;
+    public PatientController(IPatientRepository patientRepository)
     {
-        _patientRepository = new PatientRepository();
+        _patientRepository = patientRepository;
     }
     // GET api/<PatientController>/5
     [HttpGet("{id}")]
-    public async Task<object> Get(string id)
+    public async Task<ActionResult<Patient>> Get(string id)
     {
-     return await _patientRepository.Get(id);
+        
+        Patient p= await _patientRepository.Get(id);
+        if (p == null)
+        {
+            return NotFound();
+        }
+        return Ok(p);
     }
 
     // POST api/<PatientController>
     [HttpPost]
-    public  void Post([FromBody] Patient patient)
+    public async Task<ActionResult> Post([FromBody] Patient patient)
     {
-        _patientRepository.Save(patient);
+        if (patient==null || patient.PatientId == null || patient.Age>120 || patient.Age<0 )
+        {
+            return BadRequest();
+        }
+        bool flag =await _patientRepository.Save(patient);
+        if(flag)
+        {
+            return Ok();
+        }
+        return NotFound();
+        
     }
     [HttpGet]
-    public async Task<List<Location>> GetLocations(string id)
+    public async Task<ActionResult<List<Location>>> GetLocations(string id)
     {
-        return await _patientRepository.GetLocationsByPatientId(id);
+        List<Location> locations =await _patientRepository.GetLocationsByPatientId(id);
+        if (locations==null || locations.Count<1)
+        {
+            return NoContent();
+        }
+        return Ok(locations);   
     }
 
 

@@ -72,6 +72,27 @@ namespace EpedimiologicReport.Dal.Migrations
                     b.ToTable("Patients");
                 });
 
+            modelBuilder.Entity("EpedimiologicReport.Dal.Models.User", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("EpedimiologicReport.Dal.Models.Location", b =>
                 {
                     b.HasOne("EpedimiologicReport.Dal.Models.Patient", "Patient")

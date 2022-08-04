@@ -12,16 +12,23 @@ namespace EpedimiologicReport.Dal
     {
         private CoronaContext _context;
 
-        public PatientDal()
+        public PatientDal(CoronaContext corona)
         {
-            _context = new CoronaContext();
+            _context = corona;
         }
-        public async void AddPatient(Patient patient)
+        public async Task<bool> AddPatient(Patient patient)
         {
-            Patient p = new Patient();
-            p = patient;
-            await _context.Patients.AddAsync(p);
-          await  _context.SaveChangesAsync();
+            Patient p = patient;
+           _context.Patients.Add(p);    
+            try
+            {
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public async Task<List<Location>> GetLocationsByPatientId(string patientId)
         {

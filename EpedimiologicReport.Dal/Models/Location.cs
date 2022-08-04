@@ -11,12 +11,13 @@ public class Location
         Patient = null;
     }
     public int LocationId { get; set; }
-    public DateTime FromDate { get; set; }
+    public DateTime? FromDate { get; set; }
     public DateTime ToDate { get; set; }
     public string City { get; set; }
-    public string Adress { get; set; }
+    public string Adress { get; set; } 
+    public string PatientId { get; set; }
 
     [ForeignKey("PatientId")]
-    public virtual Patient Patient { get; set; }
-    public string PatientId { get; set; }
+   public virtual Patient Patient { get; set; }
+   
 }
