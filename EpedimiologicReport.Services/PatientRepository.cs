@@ -9,19 +9,20 @@ namespace EpedimiologicReport.Services;
 
 public  class PatientRepository : IPatientRepository
 {
-    PatientDal _patientDal;
-    public PatientRepository()
+    IPatientDal _patientDal;
+    public PatientRepository(IPatientDal patientDal)
     {
-        _patientDal = new PatientDal();
+        _patientDal = patientDal;
     }
     public async Task<Patient> Get(string id)
     {
         return await _patientDal.GetPatient(id);   
     }
 
-    public  void Save(Patient patient)
+    public  async Task<bool> Save(Patient patient)
     {
-          _patientDal.AddPatient(patient);
+        bool flag= await  _patientDal.AddPatient(patient);
+        return flag;
     }
     public async Task<List<Location>> GetLocationsByPatientId(string id)
     {

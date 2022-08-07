@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EpedimiologicReport.Dal.Models;
 using EpedimiologicReport.Services;
+using EpedimiologicReport.Services.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -16,9 +17,9 @@ namespace EpedimiologicReport.api.Controllers;
 public class LocationController : ControllerBase
 {
     ILocationRepository _locationRepository;
-    public LocationController()
+    public LocationController(ILocationRepository locationRepository)
     {
-        _locationRepository = new LocationRepository();
+        _locationRepository = locationRepository;
     }
     // GET: api/<LocationController>
     //filter
@@ -36,23 +37,52 @@ public class LocationController : ControllerBase
         return NotFound();
     }
     [HttpPost]
-    public void PostLocation([FromBody] Location location)
+    public async Task<ActionResult<bool>> PostLocationAsync([FromBody] LocationDto location)
     {
-        _locationRepository.AddLocation(location);
+        if (location!=null && location.FromDate.Value.CompareTo(location.ToDate)<=0)
+        {
+            
+          bool flag = await _locationRepository.AddLocation(location);
+            if (flag)
+            {
+                return Ok();
+            }
+            return NotFound();
+           
+        }
+        else
+        {
+            return BadRequest();
+        }
+       
     }
     
     [HttpGet]
     [Route("GetAll")]
-    public async Task<List<Location>> GetAll()
+    public async Task<ActionResult<List<Location>>> GetAll()
     {
-        return await _locationRepository.Get("");
+        var locations =  await _locationRepository.Get("");
+        if (locations == null || locations.Count < 1)
+        {
+            return NoContent();
+        }
+        return Ok(locations);
     }
     //filter with city
-    [HttpGet]
+    [HttpPost]
     [Route("GetFilter")]
-    public Task<List<Location>> GetCityFilter([FromBody] Dal.Models.LocationSearch locationSearch)
+    public async Task<ActionResult<List<Location>>> GetCityFilter([FromBody] Dal.Models.LocationSearch locationSearch)
     {
-        return _locationRepository.GetAndFilter(locationSearch);
+        if (locationSearch == null)
+        {
+            throw new ArgumentNullException(nameof(locationSearch));
+        }
+        var locations =await _locationRepository.GetAndFilter(locationSearch);
+        if (locations==null || locations.Count<1)
+        {
+            return NoContent();
+        }
+        return Ok(locations);   
     }
 
 

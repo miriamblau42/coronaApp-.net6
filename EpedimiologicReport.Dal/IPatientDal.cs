@@ -6,7 +6,7 @@ namespace EpedimiologicReport.Dal
 {
     public interface IPatientDal
     {
-        void AddPatient(Patient patient);
+        Task<bool> AddPatient(Patient patient);
         public  Task<List<Location>> GetLocationsByPatientId(string patientId);
         public Task<Patient> GetPatient(string patientId);
 
